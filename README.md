@@ -27,3 +27,10 @@ RPN网络通过在共享特征图上滑动的窗口为每一个像素点生成�
 ## 垂直投影倒序分割
 通过垂直投影倒序分割的方法对车牌进行字符分割，效果如下<br>
 ![segmentataion](./img/segmentation.jpg)<br>
+# 识别
+分别用了两个卷积神经网络识别车牌中的数字字母与汉字。<br>
+卷积神经网络结构以及处理图片的流程如下：<br>
+![cnn](./CNN/img/CNN.jpg "卷积神经网络结构") ![process](./CNN/img/process.jpg "卷积神经网络处理图片的流程")<br>
+具体的特征提取，分类识别的原理不再赘述，自行学习，资料海量<br>
+最终的识别效果如下：<br>
+![recongnition](./img/recongnition.jpg)
